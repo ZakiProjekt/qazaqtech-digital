@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48" role="img" aria-label="QazaqTech Digital логотипі">
+  <defs>
+    <linearGradient id="qtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="4" width="40" height="40" rx="10" fill="url(#qtGrad)"/>
+  <circle cx="22" cy="22" r="10" fill="none" stroke="#FFFFFF" stroke-width="3.2"/>
+  <line x1="28" y1="28" x2="35" y2="35" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="22" cy="22" r="3" fill="#38BDF8"/>
+  <text x="54" y="24" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#0F172A">QazaqTech</text>
+  <text x="54" y="39" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="2.2" fill="#1D4ED8">DIGITAL AGENCY</text>
+</svg>

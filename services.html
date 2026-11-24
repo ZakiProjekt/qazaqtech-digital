@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QazaqTech Digital қызметтер каталогы, санат сүзгісі, жоба құнын есептеу калькуляторы және жиі қойылатын сұрақтар.">
+  <title>QazaqTech Digital — Қызметтер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="QazaqTech Digital басты беті">
+        <img src="images/logo.svg" alt="QazaqTech Digital логотипі" width="184" height="40">
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Негізгі навигация">
+        <a href="index.html" class="nav-link">Басты бет</a>
+        <a href="about.html" class="nav-link">Біз туралы</a>
+        <a href="services.html" class="nav-link active">Қызметтер</a>
+        <a href="contact.html" class="nav-link">Контактілер</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Тақырыпты ауыстыру" title="Жарық / Күңгірт режим">☾</button>
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta">Өтінім қалдыру</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Мәзірді ашу" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="section-tag">Қызметтер каталогы</span>
+        <h1>Цифрлық қызметтер және баға калькуляторы</h1>
+        <p>Санат бойынша сүзгілеп, жобаңызға сәйкес шешімді таңдаңыз және төмендегі интерактивті калькулятор арқылы құнын есептеңіз.</p>
+      </div>
+    </section>
+
+    <!-- Санат бойынша сүзгілеу -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Қызметтер сүзгісі">
+          <button type="button" class="filter-btn active" data-filter="all">Барлығы (6)</button>
+          <button type="button" class="filter-btn" data-filter="web">Веб-әзірлеу</button>
+          <button type="button" class="filter-btn" data-filter="design">UI/UX Дизайн</button>
+          <button type="button" class="filter-btn" data-filter="cloud">Бұлт және SEO</button>
+        </div>
+
+        <div class="grid-3">
+          <article class="card service-card" data-category="web">
+            <div class="card-icon">W1</div>
+            <h3>Корпоративтік веб-сайт</h3>
+            <p>Компанияның тұсаукесері, қызметтер каталогы, жаңалықтар және кері байланыс формасы бар көп бетті бейімді сайт.</p>
+            <div class="card-meta"><span>350 000 ₸</span><span>14 күн</span></div>
+          </article>
+
+          <article class="card service-card" data-category="web">
+            <div class="card-icon">W2</div>
+            <h3>Интернет-дүкен</h3>
+            <p>Тауар сүзгісі, себет, онлайн төлем және CRM-мен интеграцияланған электрондық сауда алаңы.</p>
+            <div class="card-meta"><span>620 000 ₸</span><span>24 күн</span></div>
+          </article>
+
+          <article class="card service-card" data-category="design">
+            <div class="card-icon">D1</div>
+            <h3>Wireframe және UI-макет</h3>
+            <p>Figma ортасында десктоп және мобильді нұсқаларға арналған интерактивті прототип пен дизайн-жүйе әзірлеу.</p>
+            <div class="card-meta"><span>120 000 ₸</span><span>5 күн</span></div>
+          </article>
+
+          <article class="card service-card" data-category="design">
+            <div class="card-icon">D2</div>
+            <h3>Брендбук және логотип</h3>
+            <p>SVG форматындағы векторлық логотип, түс палитрасы, типографика және веб-белгішелер жиынтығы.</p>
+            <div class="card-meta"><span>95 000 ₸</span><span>4 күн</span></div>
+          </article>
+
+          <article class="card service-card" data-category="cloud">
+            <div class="card-icon">C1</div>
+            <h3>Хостинг және CI/CD баптау</h3>
+            <p>Жобаны GitHub Pages, Netlify немесе Vercel платформаларына SSL сертификатымен (HTTPS) жариялау.</p>
+            <div class="card-meta"><span>60 000 ₸</span><span>2 күн</span></div>
+          </article>
+
+          <article class="card service-card" data-category="cloud">
+            <div class="card-icon">C2</div>
+            <h3>Техникалық SEO және аудит</h3>
+            <p>Мета-тегтерді оңтайландыру, Core Web Vitals жылдамдығын арттыру және Lighthouse аудитін 95+ деңгейіне жеткізу.</p>
+            <div class="card-meta"><span>85 000 ₸</span><span>4 күн</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Интерактивті баға калькуляторы -->
+    <section class="section section-alt" id="calculator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">JavaScript Интерактив</span>
+          <h2>Жоба құнын онлайн есептеу</h2>
+          <p>Параметрлерді өзгерткен сәтте жобаның болжамды бюджеті мен орындау мерзімі автоматты түрде қайта есептеледі.</p>
+        </div>
+
+        <div class="calculator-box">
+          <div>
+            <div class="form-group">
+              <label for="projectType">Веб-сайт түрі</label>
+              <select id="projectType" class="form-control">
+                <option value="landing">Лендинг (бір бетті сайт) — 180 000 ₸</option>
+                <option value="corporate" selected>Корпоративтік веб-сайт — 350 000 ₸</option>
+                <option value="shop">Интернет-дүкен — 620 000 ₸</option>
+                <option value="portal">Веб-портал — 850 000 ₸</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pageCount">Беттер саны: <strong id="pageCountValue">4 бет</strong></label>
+              <input type="range" id="pageCount" min="1" max="15" value="4" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Қосымша опциялар</label>
+              <div class="checkbox-row">
+                <label class="checkbox-item">
+                  <input type="checkbox" id="optSeo" checked> SEO оңтайландыру (+65 000 ₸)
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" id="optLang"> Көптілділік KZ/RU/EN (+80 000 ₸)
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" id="optSupport"> 6 ай техникалық қолдау (+55 000 ₸)
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <aside class="calc-summary" aria-live="polite">
+            <h3>Болжамды есеп нәтижесі</h3>
+            <div class="calc-price" id="calcTotalPrice">499 000 ₸</div>
+            <p class="calc-detail" id="calcTimeline">Болжамды орындау мерзімі: 19 жұмыс күні</p>
+            <a href="contact.html" class="btn btn-primary" style="width: 100%;">Дәл смета сұрату</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Жиі қойылатын сұрақтар (FAQ Accordion) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FAQ</span>
+          <h2>Жиі қойылатын сұрақтар</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button type="button" class="faq-question" aria-expanded="true">
+              <span>Сайт смартфондар мен планшеттерде дұрыс ашыла ма?</span>
+              <span class="faq-icon">−</span>
+            </button>
+            <div class="faq-answer">
+              Иә, барлық беттер CSS Grid, Flexbox және медиа-сұраулар (1023px және 767px шекті нүктелері) арқылы мобильді, планшеттік және десктоп экрандарға толық бейімделеді.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Сайтты тегін хостингке орналастыруға бола ма?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Статикалық HTML/CSS/JS жобаларын GitHub Pages, Netlify немесе Vercel платформаларында тегін әрі автоматты SSL сертификатымен орналастыруға болады.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Кодты болашақта өзіміз өзгерте аламыз ба?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Әрине. Барлық HTML, CSS және JavaScript файлдары таза құрылыммен, түсініктемелермен (comment) және бөлек модульдер түрінде тапсырылады.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>QazaqTech Digital</h4>
+          <p>Заманауи веб-технологиялар негізінде сапалы цифрлық шешімдер әзірлейтін отандық IT-агенттік.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Басты бет</a></li>
+            <li><a href="about.html">Біз туралы</a></li>
+            <li><a href="services.html">Қызметтер</a></li>
+            <li><a href="contact.html">Контактілер</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Қызметтер</h4>
+          <ul>
+            <li><a href="services.html">Корпоративтік сайттар</a></li>
+            <li><a href="services.html">UI/UX прототиптеу</a></li>
+            <li><a href="services.html#calculator">Баға калькуляторы</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Байланыс</h4>
+          <p>Талдықорған қ., І. Жансүгіров к-сі, 187А</p>
+          <p>Тел.: +7 (7282) 40-12-90</p>
+          <p>Email: info@qazaqtech.kz</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 QazaqTech Digital. Барлық құқықтар қорғалған.</span>
+        <span>БӨЖ 4 — Веб-технологиялар (HTML5, CSS3, JS)</span>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Беттің басына оралу" title="Басына оралу">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

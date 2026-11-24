@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QazaqTech Digital байланыс деректері және интерактивті кері байланыс формасы.">
+  <title>QazaqTech Digital — Контактілер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="QazaqTech Digital басты беті">
+        <img src="images/logo.svg" alt="QazaqTech Digital логотипі" width="184" height="40">
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Негізгі навигация">
+        <a href="index.html" class="nav-link">Басты бет</a>
+        <a href="about.html" class="nav-link">Біз туралы</a>
+        <a href="services.html" class="nav-link">Қызметтер</a>
+        <a href="contact.html" class="nav-link active">Контактілер</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Тақырыпты ауыстыру" title="Жарық / Күңгірт режим">☾</button>
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta">Өтінім қалдыру</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Мәзірді ашу" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="section-tag">Байланыс орталығы</span>
+        <h1>Бізбен байланысыңыз</h1>
+        <p>Жобаңыз бойынша сұрақтарыңыз болса, төмендегі форманы толтырыңыз немесе кеңсемізге тікелей хабарласыңыз.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Кеңсе деректері</h2>
+          <p style="margin-top: 8px; color: var(--color-text-muted);">Жұмыс күндері дүйсенбі–жұма аралығында 09:00-ден 18:30-ға дейін кеңес береміз.</p>
+          <div class="info-list">
+            <div class="info-item">
+              <strong>Мекенжайымыз</strong>
+              <span>Жетісу облысы, Талдықорған қ., І. Жансүгіров көшесі, 187А, IT-офис 405</span>
+            </div>
+            <div class="info-item">
+              <strong>Телефон нөмірі</strong>
+              <span>+7 (7282) 40-12-90 / +7 (707) 555-24-80</span>
+            </div>
+            <div class="info-item">
+              <strong>Электрондық пошта</strong>
+              <span>info@qazaqtech.kz / support@qazaqtech.kz</span>
+            </div>
+            <div class="info-item">
+              <strong>Жұмыс уақыты</strong>
+              <span>Дс–Жм: 09:00 – 18:30 | Сб–Жс: демалыс</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 style="margin-bottom: 16px;">Кері байланыс формасы</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Аты-жөніңіз *</label>
+              <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Мысалы: Ерғали Заңғар" required>
+              <span class="error-msg" id="fullNameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Электрондық пошта *</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="name@example.kz" required>
+              <span class="error-msg" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Телефон нөмірі *</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="+7 (700) 123-45-67" required>
+              <span class="error-msg" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Жоба туралы қысқаша мәлімет *</label>
+              <textarea id="message" name="message" rows="4" class="form-control" placeholder="Қандай веб-сайт қажет екенін сипаттаңыз..." required></textarea>
+              <span class="error-msg" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Өтінім жіберу</button>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>QazaqTech Digital</h4>
+          <p>Заманауи веб-технологиялар негізінде сапалы цифрлық шешімдер әзірлейтін отандық IT-агенттік.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Басты бет</a></li>
+            <li><a href="about.html">Біз туралы</a></li>
+            <li><a href="services.html">Қызметтер</a></li>
+            <li><a href="contact.html">Контактілер</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Қызметтер</h4>
+          <ul>
+            <li><a href="services.html">Корпоративтік сайттар</a></li>
+            <li><a href="services.html">UI/UX прототиптеу</a></li>
+            <li><a href="services.html#calculator">Баға калькуляторы</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Байланыс</h4>
+          <p>Талдықорған қ., І. Жансүгіров к-сі, 187А</p>
+          <p>Тел.: +7 (7282) 40-12-90</p>
+          <p>Email: info@qazaqtech.kz</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 QazaqTech Digital. Барлық құқықтар қорғалған.</span>
+        <span>БӨЖ 4 — Веб-технологиялар (HTML5, CSS3, JS)</span>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Беттің басына оралу" title="Басына оралу">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
